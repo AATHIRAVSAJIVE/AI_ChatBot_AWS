@@ -1,0 +1,156 @@
+﻿{
+  "intents": [
+
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hey", "Hello", "Good morning", "Good evening", "Hi there", "Is anyone there?", "Haroo", "Yaw", "Holla", "Wassup", "What's up", "Hey bot"],
+      "responses": [
+        "Hello! How can I assist you today?",
+        "Hi there! What can I help you with?",
+        "Greetings! How can I support you today?",
+        "Hello, thanks for checking in!"
+      ]
+    },
+
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "Talk to you later", "Catch you later", "Farewell", "See ya", "Good night"],
+      "responses": [
+        "Goodbye! Have a great day!",
+        "See you later! Let me know if you need anything else.",
+        "Have a nice time, welcome back again!",
+        "Bye bye!"
+      ]
+    },
+
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "Thanks a lot", "Thank you very much", "okay", "thankyou", "That's helpful", "Awesome, thanks", "Thanks for helping me", "wow", "great", "appreciate it", "cool, thanks"],
+      "responses": ["You're welcome!", "Happy to help!", "Any time!", "You're welcome! Let me know if you need anything else."]
+    },
+
+    {
+      "tag": "order_status",
+      "patterns": [
+        "Where is my order?", "Track my order", "Order status", "Can you tell me the status of my order?",
+        "Track my package", "What's the status of my order?", "Delivery status", "Find my order", "Locate my shipment",
+        "Check my order", "Update on my package", "Where's my parcel?", "Order summary", "Track order"
+      ],
+      "responses": [
+        "Please provide your order ID to check the status.",
+        "I can help with that! Could you please share your order ID?",
+        "Sure! I just need your order ID to check the status."
+      ]
+    },
+
+    {
+      "tag": "provide_order_id",
+      "patterns": [
+        "My order ID is 12345",
+        "Order ID is 98765",
+        "It's 43567",
+        "Here is my order ID 78910",
+        "ID is 12876",
+        "Check this ID 56234",
+        "The ID is 4321",
+        "Can you check 99887",
+        "Track 87654",
+        "Find order 123456",
+        "My id is 77889"
+      ],
+      "responses": [
+        "Thanks! We're checking your order status now.",
+        "Got your order ID. Please wait while I fetch your order details.",
+        "Thank you! We're retrieving your order status."
+      ]
+    },
+
+    {
+      "tag": "cancel_order",
+      "patterns": ["Cancel my order", "I want to cancel my purchase", "Can I cancel an order?", "Stop my delivery", "Undo my order"],
+      "responses": [
+        "Sure! Please provide your order ID to cancel the order.",
+        "I can cancel your order if it hasn't been shipped yet. May I have the order ID?"
+      ]
+    },
+
+    {
+      "tag": "return_policy",
+      "patterns": ["What is your return policy?", "How can I return a product?", "Can I return an item?", "I'd like to return a product", "What's your policy on returns?"],
+      "responses": [
+        "Our return policy allows returns within 30 days of purchase. Would you like to initiate a return?",
+        "You can return most items within 30 days. Please provide your order ID to start the return process."
+      ]
+    },
+
+    {
+      "tag": "exchange_policy",
+      "patterns": ["Can I exchange this item?", "What is your exchange policy?", "How do exchanges work?", "I want to exchange a product"],
+      "responses": [
+        "You can exchange items within 30 days of purchase. Would you like to begin the process?",
+        "Yes, we support product exchanges. Please provide your order ID and product name."
+      ]
+    },
+
+    {
+      "tag": "shipping_info",
+      "patterns": [
+        "What are your shipping options?", "How long does shipping take?", "Do you offer free shipping?",
+        "Tell me about your shipping methods", "How much does shipping cost?", "Shipping to India?", "Shipping to USA?",
+        "Shipping details to America", "Delivery charges", "Delivery to my location", "Shipping time for express delivery"
+      ],
+      "responses": [
+        "We offer standard, express, and next-day shipping. Standard shipping is free on orders over $50.",
+        "Shipping times vary depending on your location and selected shipping method.",
+        "Yes! We offer international shipping to most countries. Let me know your location."
+      ]
+    },
+
+    {
+      "tag": "discounts",
+      "patterns": ["Are there any discounts?", "Do you have any offers?", "Is there a coupon code?", "What are the deals today?", "Sale info"],
+      "responses": [
+        "Yes! We currently have discounts on select items. Check the homepage for latest deals.",
+        "You can use coupon code SAVE10 for a 10% discount!",
+        "Yes, visit our Offers page to view all available promotions."
+      ]
+    },
+
+    {
+      "tag": "payment_methods",
+      "patterns": ["What payment methods do you accept?", "Can I pay with PayPal?", "Do you accept credit cards?", "How can I pay for my order?", "Can I use UPI?"],
+      "responses": ["We accept credit/debit cards, PayPal, UPI, and Apple Pay.", "You can pay using major cards, PayPal, UPI, and wallets."]
+    },
+
+    {
+      "tag": "product_inquiry",
+      "patterns": ["Can you tell me more about this product?", "Is this product available?", "I want to know more about this item", "Tell me about this product", "What are the features of this product?", "Is it in stock?"],
+      "responses": ["Sure! Please provide the product name or ID.", "I'd be happy to help! Which product are you asking about?"]
+    },
+
+    {
+      "tag": "recommendations",
+      "patterns": ["Can you recommend something?", "Suggest a product", "What’s trending now?", "Best selling items?", "Give me a good gift idea"],
+      "responses": ["Sure! Let me know your preferences or budget.", "Looking for something specific? I’d be happy to recommend!"]
+    },
+
+    {
+      "tag": "complaint",
+      "patterns": ["I have a complaint", "I want to make a complaint", "Your service is terrible", "I'm not happy with your service", "I want to speak to a manager", "You delivered the wrong item", "Order was damaged"],
+      "responses": ["I'm sorry to hear that. Please share your issue in detail.", "I understand your frustration. Let me help resolve it."]
+    },
+
+    {
+      "tag": "name",
+      "patterns": ["my name is", "I'm", "I am", "Hi, I'm", "Hi, my name is", "Call me"],
+      "responses": ["Nice to meet you! How can I assist you today?", "Thanks for sharing your name. What can I do for you today?"]
+    },
+
+    {
+      "tag": "noanswer",
+      "patterns": ["", "what?", "not understand", "say again", "I didn’t get you", "????", "Can you rephrase", "You there?", "Why silent?", "Speak"],
+      "responses": ["Sorry, I didn't understand that.", "Can you rephrase that?", "I'm not sure what you mean."]
+    }
+
+  ]
+}
